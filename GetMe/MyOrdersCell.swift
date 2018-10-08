@@ -11,6 +11,15 @@ import UIKit
 
 class MyOrdersCell: UITableViewCell {
     
+    @IBOutlet weak var myOrderLogoButton: UIButton!
+    @IBOutlet weak var myOrderSettingButton: UIButton!
     
+    @IBAction func myOrderLogoPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func myOrderSettingsPressed(_ sender: UIButton) {
+        
+    }
     
 }
