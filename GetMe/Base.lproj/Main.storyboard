@@ -16,17 +16,71 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fu2-vT-WL1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="70" id="8J6-Iz-YNn" customClass="MyOrdersCell" customModule="GetMe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8J6-Iz-YNn" id="ecZ-Z5-Ce2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyU-eV-S6L">
+                                                    <rect key="frame" x="155.5" y="0.0" width="64" height="64"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="64" id="DRc-xD-mnW"/>
+                                                        <constraint firstAttribute="width" constant="64" id="Ogg-TY-mlt"/>
+                                                    </constraints>
+                                                    <state key="normal" backgroundImage="chipotle_logo"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4F-rB-5iu">
+                                                    <rect key="frame" x="320" y="16" width="32" height="32"/>
+                                                    <state key="normal" image="settings"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="C4F-rB-5iu" firstAttribute="centerY" secondItem="ecZ-Z5-Ce2" secondAttribute="centerY" id="UX9-fl-pTt"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="C4F-rB-5iu" secondAttribute="trailing" constant="8" id="YZF-uI-ezU"/>
+                                                <constraint firstItem="iyU-eV-S6L" firstAttribute="centerX" secondItem="ecZ-Z5-Ce2" secondAttribute="centerX" id="gEX-es-JV1"/>
+                                                <constraint firstItem="iyU-eV-S6L" firstAttribute="centerY" secondItem="ecZ-Z5-Ce2" secondAttribute="centerY" id="qVH-NH-Nvw"/>
+                                                <constraint firstAttribute="bottom" secondItem="iyU-eV-S6L" secondAttribute="bottom" id="qY5-ed-36O"/>
+                                                <constraint firstItem="iyU-eV-S6L" firstAttribute="centerY" secondItem="ecZ-Z5-Ce2" secondAttribute="centerY" id="vh1-Aq-Zo3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fu2-vT-WL1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JeP-o5-dTJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fu2-vT-WL1" secondAttribute="trailing" id="buV-EP-SM4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fu2-vT-WL1" secondAttribute="bottom" id="eXv-pe-DbA"/>
+                            <constraint firstItem="Fu2-vT-WL1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uHl-E2-IVH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="X2U-eo-SO3">
                         <barButtonItem key="leftBarButtonItem" title="My orders" id="V5U-dR-LzV">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="myOrdersPressed:" destination="BYZ-38-t0r" id="p16-bh-vJG"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add a food order" id="vDc-8R-j00">
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addOrderPressed:" destination="BYZ-38-t0r" id="j6p-lh-eIY"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addOrderButton" destination="vDc-8R-j00" id="TSY-xE-IQr"/>
+                        <outlet property="myOrdersButton" destination="V5U-dR-LzV" id="rVZ-0r-NTX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,7 +133,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dKo-9T-1w9">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.92156862745098034" green="0.75686274509803919" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="vVS-HR-SwL" kind="relationship" relationship="viewControllers" id="zfG-71-Hwv"/>
@@ -150,10 +204,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipotle_logo" width="256" height="256"/>
         <image name="lunchbox" width="32" height="32"/>
         <image name="lunchbox_selected_2" width="32" height="32"/>
         <image name="phone" width="32" height="32"/>
         <image name="phone_selected" width="32" height="32"/>
+        <image name="settings" width="32" height="32"/>
         <image name="user" width="32" height="32"/>
         <image name="user_selected" width="32" height="32"/>
     </resources>

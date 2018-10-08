@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainVC.swift
 //  GetMe
 //
 //  Created by Neil Sood on 10/7/18.
@@ -8,13 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainVC: UIViewController {
 
+    @IBOutlet weak var myOrdersButton: UIBarButtonItem!
+    @IBOutlet weak var addOrderButton: UIBarButtonItem!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func myOrdersPressed(_ sender: UIBarButtonItem) {
+    }
+    
+    @IBAction func addOrderPressed(_ sender: UIBarButtonItem) {
+    }
+    
+    
 }
 
