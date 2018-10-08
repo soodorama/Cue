@@ -15,6 +15,7 @@
 		8ECDA3CD216B07BD006E2442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECDA3CB216B07BD006E2442 /* LaunchScreen.storyboard */; };
 		8ECDA3D8216B07BD006E2442 /* GetMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDA3D7216B07BD006E2442 /* GetMeTests.swift */; };
 		8ECDA3E3216B07BE006E2442 /* GetMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDA3E2216B07BE006E2442 /* GetMeUITests.swift */; };
+		8ECDA3F1216B120B006E2442 /* LunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDA3F0216B120B006E2442 /* LunchVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8ECDA3DE216B07BE006E2442 /* GetMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECDA3E2216B07BE006E2442 /* GetMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMeUITests.swift; sourceTree = "<group>"; };
 		8ECDA3E4216B07BE006E2442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ECDA3F0216B120B006E2442 /* LunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				8ECDA3BF216B07BD006E2442 /* AppDelegate.swift */,
 				8ECDA3C1216B07BD006E2442 /* MainVC.swift */,
 				8ECDA3C3216B07BD006E2442 /* Main.storyboard */,
+				8ECDA3F0216B120B006E2442 /* LunchVC.swift */,
 				8ECDA3C9216B07BD006E2442 /* Assets.xcassets */,
 				8ECDA3CB216B07BD006E2442 /* LaunchScreen.storyboard */,
 				8ECDA3CE216B07BD006E2442 /* Info.plist */,
@@ -262,6 +265,7 @@
 				8ECDA3C2216B07BD006E2442 /* MainVC.swift in Sources */,
 				8ECDA3C0216B07BD006E2442 /* AppDelegate.swift in Sources */,
 				8ECDA3C8216B07BD006E2442 /* GetMe.xcdatamodeld in Sources */,
+				8ECDA3F1216B120B006E2442 /* LunchVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
